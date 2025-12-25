@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+
+.mess{
+ width: 50%;
+ text-align: justify;
+ margin: 2rem 1rem;
+ 
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+.titleblog{
+  margin-left: 2rem;
+}
+.contentblog{
+  margin-left: 3rem;
+  max-width: 60%;
+}

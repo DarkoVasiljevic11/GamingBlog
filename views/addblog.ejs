@@ -1,0 +1,67 @@
+<%- include("partials/head.ejs") %>
+<h1>Here's the place to share your favorite works of art that are video games!</h1>
+<p class="mess">How they move us, change us, and motivate us. Far off worlds and states of mind or the ones that hit close to home and reality. Deep  meaning works of art or simple and fun experiences to be enjoyed and engulfed by. Whichever it maybe be or whatever it may spark within or outside of ones persona, share it for others to see as a good recommendation or to remmeber the experinces they had.</p>
+<!--<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">The game you're gona tell us about?</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" for example Clair Obscur:Expedition 33">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Tell us more about it</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+</div>-->
+<main>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="mb-4 text-center">Just Tell the World about it</h4>
+
+          <form action="/post" method="POST">
+            <!-- Game Title -->
+            <div class="mb-3">
+              <label for="title" class="form-label">Game Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                name="title"
+                placeholder="The game you're gonna tell us more about?"
+                required
+              >
+            </div>
+
+            <!-- Post Text -->
+            <div class="mb-3">
+              <label for="content" class="form-label">Post Content</label>
+              <textarea
+                class="form-control"
+                id="content"
+                name="content"
+                rows="5"
+                placeholder="Tell us more about it..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-grid">
+              <input
+                type="submit"
+                class="btn btn-dark"
+                value="Submit Post"
+              >
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</main>
+
+<%- include("partials/footer.ejs")  %>
